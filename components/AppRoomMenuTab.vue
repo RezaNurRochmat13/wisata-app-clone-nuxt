@@ -40,7 +40,7 @@
               ]"
               class="inline-block p-4 border-b-2 rounded-t-lg"
             >
-              Amenities
+              Photos
             </button>
           </li>
   
@@ -55,7 +55,7 @@
               ]"
               class="inline-block p-4 border-b-2 rounded-t-lg"
             >
-              Reviews
+              Info
             </button>
           </li>
         </ul>
@@ -67,11 +67,13 @@
         <div v-if="currentTab === 'tab1'">
           <h3 class="text-lg font-semibold mb-2">Room Overview</h3>
           <AppRoomCard />
+          <AppRoomCard />
+          <AppRoomCard />
         </div>
   
         <!-- Content for Tab 2 -->
         <div v-if="currentTab === 'tab2'">
-          <h3 class="text-lg font-semibold mb-2">Amenities</h3>
+          <h3 class="text-lg font-semibold mb-2">Photos</h3>
           <ul class="list-disc list-inside text-gray-600">
             <li>Free Wi-Fi</li>
             <li>Complimentary Breakfast</li>
@@ -83,7 +85,7 @@
   
         <!-- Content for Tab 3 -->
         <div v-if="currentTab === 'tab3'">
-          <h3 class="text-lg font-semibold mb-2">Guest Reviews</h3>
+          <h3 class="text-lg font-semibold mb-2">Info</h3>
           <div class="space-y-2">
             <p class="text-gray-600 italic">
               "Amazing experience! The room was clean, and the view was
