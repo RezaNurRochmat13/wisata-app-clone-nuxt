@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# WisataApp Clone
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Project built for clone WisataApp website.
 
 ## Setup
 
@@ -25,6 +25,12 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
+# clone
+clone this repository on your local machine
+
+# open project
+open project using your favorite text editor or IDE 
+
 # npm
 npm run dev
 
@@ -38,9 +44,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## Technology used
 
-Build the application for production:
+Technology inside project for building application.
 
 ```bash
 # npm
@@ -56,20 +62,29 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+# Directory structure
+
+Directory structure of the projects
 
 ```bash
-# npm
-npm run preview
+# components
+Purposes for refine components of the app.
 
-# pnpm
-pnpm preview
+# assets
+Purposes for refine assets of the app.
 
-# yarn
-yarn preview
+# composables
+Purposes for refine composables reusable functions.
 
-# bun
-bun run preview
+# layouts
+Purposes for refine reusable layouts.
+
+# middleware
+Purposes for refine custom middleware of the app.
+
+# pages
+Purposes for refine pages of the app.
+
+# utils
+Purposes for refine utility functions of the app.
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
