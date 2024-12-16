@@ -49,17 +49,9 @@ bun run dev
 Technology inside project for building application.
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+- Nuxt 3
+- TailwindCSS
+- Flowbite
 ```
 
 # Directory structure
