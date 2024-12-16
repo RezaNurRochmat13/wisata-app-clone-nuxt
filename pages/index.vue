@@ -4,7 +4,8 @@
 
 <template>
     <div class="app-page">
-        Hello index page
+        <AppHotelCard />
+        <AppRoomMenuTab />
     </div>
 </template>
 
