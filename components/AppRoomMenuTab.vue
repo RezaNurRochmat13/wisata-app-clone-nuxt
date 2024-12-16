@@ -11,55 +11,58 @@
       <!-- Tabs Navigation -->
       <div class="border-b border-gray-200">
         <ul
-          class="flex flex-wrap -mb-px text-sm font-medium text-center"
-          role="tablist"
+            class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center"
+            role="tablist"
         >
-          <!-- Tab 1 -->
-          <li class="mr-2">
+            <!-- Tab 1 -->
+            <li class="mr-2">
             <button
-              @click="currentTab = 'tab1'"
-              :class="[
+                @click="currentTab = 'tab1'"
+                :class="[
                 currentTab === 'tab1'
-                  ? 'text-blue-600 border-blue-600'
-                  : 'text-gray-600 hover:text-gray-800 hover:border-gray-300',
-              ]"
-              class="inline-block p-4 border-b-2 rounded-t-lg"
+                    ? 'text-blue-600 border-blue-600'
+                    : 'text-gray-600 hover:text-gray-800 hover:border-gray-300',
+                ]"
+                class="inline-block p-4 border-b-2 rounded-t-lg flex items-center space-x-2"
             >
-              Deals
+                <span class="icon">🔖</span> <!-- Replace with an appropriate icon -->
+                <span>Deals</span>
             </button>
-          </li>
-  
-          <!-- Tab 2 -->
-          <li class="mr-2">
+            </li>
+
+            <!-- Tab 2 -->
+            <li class="mr-2">
             <button
-              @click="currentTab = 'tab2'"
-              :class="[
+                @click="currentTab = 'tab2'"
+                :class="[
                 currentTab === 'tab2'
-                  ? 'text-blue-600 border-blue-600'
-                  : 'text-gray-600 hover:text-gray-800 hover:border-gray-300',
-              ]"
-              class="inline-block p-4 border-b-2 rounded-t-lg"
+                    ? 'text-blue-600 border-blue-600'
+                    : 'text-gray-600 hover:text-gray-800 hover:border-gray-300',
+                ]"
+                class="inline-block p-4 border-b-2 rounded-t-lg flex items-center space-x-2"
             >
-              Photos
+                <span class="icon">📷</span> <!-- Replace with an appropriate icon -->
+                <span>Photos</span>
             </button>
-          </li>
-  
-          <!-- Tab 3 -->
-          <li class="mr-2">
+            </li>
+
+            <!-- Tab 3 -->
+            <li class="mr-2">
             <button
-              @click="currentTab = 'tab3'"
-              :class="[
+                @click="currentTab = 'tab3'"
+                :class="[
                 currentTab === 'tab3'
-                  ? 'text-blue-600 border-blue-600'
-                  : 'text-gray-600 hover:text-gray-800 hover:border-gray-300',
-              ]"
-              class="inline-block p-4 border-b-2 rounded-t-lg"
+                    ? 'text-blue-600 border-blue-600'
+                    : 'text-gray-600 hover:text-gray-800 hover:border-gray-300',
+                ]"
+                class="inline-block p-4 border-b-2 rounded-t-lg flex items-center space-x-2"
             >
-              Info
+                <span class="icon">ℹ️</span> <!-- Replace with an appropriate icon -->
+                <span>Info</span>
             </button>
-          </li>
+            </li>
         </ul>
-      </div>
+     </div>
   
       <!-- Tabs Content -->
       <div class="p-4 bg-white border border-gray-200 rounded-b-lg">
@@ -74,13 +77,7 @@
         <!-- Content for Tab 2 -->
         <div v-if="currentTab === 'tab2'">
           <h3 class="text-lg font-semibold mb-2">Photos</h3>
-          <ul class="list-disc list-inside text-gray-600">
-            <li>Free Wi-Fi</li>
-            <li>Complimentary Breakfast</li>
-            <li>Swimming Pool Access</li>
-            <li>Fitness Center</li>
-            <li>In-room Dining Service</li>
-          </ul>
+          <AppRoomGallery />
         </div>
   
         <!-- Content for Tab 3 -->
