@@ -12,8 +12,8 @@ onMounted(() => {
 
 <template>
   <div class="app-root">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <AppHeader />
+    <NuxtPage />
+    <AppFooter />
   </div>
 </template>
