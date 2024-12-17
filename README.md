@@ -80,3 +80,11 @@ Purposes for refine pages of the app.
 # utils
 Purposes for refine utility functions of the app.
 ```
+
+# Deployment 
+
+Deployment using Vercel.
+
+```bash
+Here for link deployment : https://wisata-app-clone-nuxt-l5fhc3t3o-rejak-curious-devs-projects.vercel.app/
+```
