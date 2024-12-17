@@ -83,16 +83,7 @@
         <!-- Content for Tab 3 -->
         <div v-if="currentTab === 'tab3'">
           <h3 class="text-lg font-semibold mb-2">Info</h3>
-          <div class="space-y-2">
-            <p class="text-gray-600 italic">
-              "Amazing experience! The room was clean, and the view was
-              breathtaking." - <strong>John Doe</strong>
-            </p>
-            <p class="text-gray-600 italic">
-              "Great amenities and excellent service from the staff!" -
-              <strong>Jane Smith</strong>
-            </p>
-          </div>
+          <AppRoomInfo />
         </div>
       </div>
     </div>
