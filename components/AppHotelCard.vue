@@ -2,6 +2,11 @@
   defineOptions({
     name: 'AppHotelCard',
   })
+  const { isLoading, item, getHotelContent  } = useHotelContent();
+
+  onMounted(() => {
+    getHotelContent();
+  })
 </script>
 
 <template>
@@ -10,7 +15,7 @@
       <div class="flex-shrink-0">
         <img
           class="w-32 h-32 rounded-full object-cover"
-          src="https://i.travelapi.com/lodging/10000000/9300000/9296600/9296574/cbfc3f48_z.jpg"
+          :src="item?.catalog?.hero_image_url?.sm"
           alt="Fairmont Jakarta"
         />
       </div>
@@ -19,7 +24,7 @@
       <div class="ml-6 flex-1">
         <!-- Hotel Name -->
         <h2 class="text-2xl font-bold text-gray-800 flex items-center">
-          Fairmont Jakarta
+          {{ item?.name }}
           <!-- Star Ratings -->
           <div class="ml-2 flex">
             <template v-for="n in 5" :key="n">
@@ -40,7 +45,7 @@
         <!-- Hotel Description -->
         <p class="text-sm text-gray-500 mt-1">Hotel</p>
         <p class="text-gray-600 mt-2">
-          Jl. Asia Afrika No.8, Gelora Bung Karno, Jakarta, Indonesia 10270
+          {{ item?.address_line }}, {{ item?.name_suffix }} 10270
         </p>
   
         <!-- Reviews -->

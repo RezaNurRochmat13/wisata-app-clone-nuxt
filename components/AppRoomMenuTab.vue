@@ -4,6 +4,11 @@
   })
 
   const currentTab = ref('tab1');
+  const { isLoading, item, getHotelContent  } = useHotelContent();
+
+  onMounted(() => {
+    getHotelContent();
+  })
 </script>
 
 <template>
